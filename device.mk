@@ -98,6 +98,9 @@ BOARD_USES_QCOM_FBE_DECRYPTION := true
 
 TW_LOAD_VENDOR_MODULES := "goodix_fp.ko adsp_loader_dlkm.ko modules.load msm_drm.ko q6_notifier_dlkm.ko q6_pdr_dlkm.ko sensors_ssc.ko qti_battery_charger_main.ko fts_tp.ko"
 
+#Add Touch Support
+TARGET_RECOVERY_FIRMWARE_DIRS += vendor/firmware	
+
 # Haptics fix
 TW_SUPPORT_INPUT_AIDL_HAPTICS_FIX_OFF := true
 
